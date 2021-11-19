@@ -3,13 +3,13 @@ from tkinter import*
 import math
 import tkinter.messagebox
 
-root = tk()
+root = Tk()
 
 #sets the name on the top of the gui
 root.title("Scientific Calculator")
 
 #this sets the background colour to gray-white
-root.configure(background = "graywhite")
+root.configure(background = "white")
 
 
 #sets the gui such that it cannot be resized
@@ -20,6 +20,7 @@ calc = Frame(root)
 
 #this sets the grid display of the container(buttons)
 calc.grid
+
 
 
 
