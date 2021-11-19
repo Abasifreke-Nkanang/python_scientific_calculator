@@ -28,10 +28,10 @@ calc.grid()
 class Calc():
     def __init__(self):
         self.total = 0
-        self.current = ""
+        self.current = " "
         self.input_value = True
         self.check_sum = False
-        self.op = ""
+        self.op = " "
         self.result = False
 
     def numberEnter(self, num):
@@ -63,7 +63,7 @@ class Calc():
     def valid_function(self):
         if self.op == "add":
             self.total += self.current
-        if self.op == "sum":
+        if self.op == "sub":
             self.total -= self.current
         if self.op == "multi":
             self.total *= self.current
@@ -89,7 +89,7 @@ class Calc():
 
     def clear_entry(self):
         self.result = False
-        self.current = 0
+        self.current = "0"
         self.display(0)
         self.input_value = True
 
@@ -270,7 +270,7 @@ buttnAllClear = Button(calc, text = chr(67) + chr(69),
                             bd = 4,
                             command = added_value.all_clear_entry)
 buttnAllClear.grid(row = 1, column = 1, pady = 1)
-buttnsq = Button(calc, text = "\221A",
+buttnsq = Button(calc, text = "\u221A",
                             width = 6,
                             height = 2,
                             bg = "powder blue",
@@ -332,7 +332,7 @@ buttnPM = Button(calc, text = chr(177),
                             bg = "powder blue",
                             font = ("Helvetica", 20, "bold"),
                             bd = 4,
-                            command = lambda: added_value.mathPM)
+                            command = added_value.mathPM)
 buttnPM.grid(row = 5, column = 2, pady = 1)
 buttnEquals = Button(calc, text = "=",
                             width = 6,
@@ -340,7 +340,7 @@ buttnEquals = Button(calc, text = "=",
                             bg = "powder blue",
                             font = ("Helvetica", 20, "bold"),
                             bd = 4,
-                            command = lambda: added_value.sum_of_total)
+                            command = added_value.sum_of_total)
 buttnEquals.grid(row = 5, column = 3, pady = 1)
 
 #ROW 1
