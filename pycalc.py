@@ -154,7 +154,7 @@ def sinh(self):
 
 def log(self):
     self.result = False
-    self.current = math.log((float(txtDisplay.get()))
+    self.current = math.log(float(txtDisplay.get()))
     self.display(self.current)
 
 def exp(self):
@@ -465,3 +465,40 @@ lblDisplay = Label(calc, text = "Scientific Calculator",
                                     font = ("Helvetica", 30, "bold"),
                                     bg = "black", fg = "white", justify = CENTER)
 lblDisplay.grid(row = 0, column = 4, columnspan = 4)
+
+#Creating the menubar of the calculator GUI
+def iExit():
+    iExit = tkinter.messagebox.askyesno("Scientific Calculator", "Do you want to exit ?" )
+    if iExit > 0:
+        root.destroy()
+        return
+
+def Scientific():
+    root.resizable(width = False, height = False)
+    root.geometry("944 x 568 + 0 + 0")
+
+def standard():
+    root.resizable(width = False, height = False)
+    root.geometry("480 x 568 + 0 + 0")
+
+menubar = Menu(calc)
+
+#menubar 1
+filemenu = Menu(menubar, tearoff = 0)
+menubar.add_cascade(label = "File", menu = filemenu)
+filemenu.add_command(label = "Standard", command = Standard)
+filemenu.add_command(label = "Scientific", command = Scientific)
+filemenu.add_separator()
+filemenu.add_command(label = "Exit", command = iExit)
+
+#menubar 2
+editmenu = Menu(menubar, tearoff = 0)
+menubar.add_cascade(label = "Edit", menu = editmenu)
+filemenu.add_command(label = "Cut")
+filemenu.add_command(label = "Copy")
+filemenu.add_separator()
+filemenu.add_command(label = "Paste")
+
+root.config(menu = menubar)
+
+root.mainloop()
