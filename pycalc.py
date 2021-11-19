@@ -15,11 +15,14 @@ root.configure(background = "white")
 #sets the gui such that it cannot be resized
 root.resizable(width = False, height = False)
 
+#sets the geometry
+root.geometry(" 480 * 568 + 450 + 90 ")
+
 #this sets the container named calc where all the buttons are contained in
 calc = Frame(root)
 
 #this sets the grid display of the container(buttons)
-calc.grid
+calc.grid()
 
 
 
