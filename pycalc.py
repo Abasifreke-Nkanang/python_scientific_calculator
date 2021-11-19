@@ -222,6 +222,39 @@ txtDisplay.grid(
 
 txtDisplay.insert(0, "0")
 
+#creating a number pad for the calculator
+
+#First of all, storing all the numbers in a string variable
+numberpad = "789456123"
+
+#row count for placing the buttons in grid
+index = 0
+
+#creating an empty list to store each button and its specs
+buttn = []
+#button specifications
+for a in range(2, 5):
+    for b in range(3):
+        buttn.append(Button(calc, 
+                            width = 6,
+                            height = 2,
+                            bg = "black",
+                            fg = "white",
+                            font = ("helvetica", 20, "bold"),
+                            bd = 4,
+                            text = numberpad[index]    ))
+
+        #set button in row and column, and separate them with a padding of 1 unit
+        buttn[index].grid(row = a, coulumn = b, pady = 1)
+
+        #putting that number as a symbol on the button
+        buttn[index]["command"] = lambda x = numberpad[index]: added_value.numberEnter(x)
+        index += 1
+
+
+
+
+
 
 
 
