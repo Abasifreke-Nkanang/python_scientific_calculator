@@ -238,8 +238,8 @@ for a in range(2, 5):
         buttn.append(Button(calc, 
                             width = 6,
                             height = 2,
-                            bg = "black",
-                            fg = "white",
+                            bg = "white",
+                            fg = "black",
                             font = ("helvetica", 20, "bold"),
                             bd = 4,
                             text = numberpad[index]    ))
@@ -256,8 +256,8 @@ for a in range(2, 5):
 buttnClear = Button(calc, text = chr(67),
                             width = 6,
                             height = 2,
-                            bg = "powder blue",
-                            font = ("Helvetica", 20, "bold"),
+                            bg = "red",
+                            font = ("Tahoma", 20, "bold"),
                             bd = 4,
                             command = added_value.clear_entry)
 buttnClear.grid(row = 1, column = 0, pady = 1)
@@ -265,8 +265,8 @@ buttnClear.grid(row = 1, column = 0, pady = 1)
 buttnAllClear = Button(calc, text = chr(67) + chr(69),
                             width = 6,
                             height = 2,
-                            bg = "powder blue",
-                            font = ("Helvetica", 20, "bold"),
+                            bg = "red",
+                            font = ("Tahoma", 20, "bold"),
                             bd = 4,
                             command = added_value.all_clear_entry)
 buttnAllClear.grid(row = 1, column = 1, pady = 1)
@@ -337,126 +337,126 @@ buttnPM.grid(row = 5, column = 2, pady = 1)
 buttnEquals = Button(calc, text = "=",
                             width = 6,
                             height = 2,
-                            bg = "powder blue",
-                            font = ("Helvetica", 20, "bold"),
+                            bg = "red",
+                            font = ("Tahoma", 20, "bold"),
                             bd = 4,
                             command = added_value.sum_of_total)
 buttnEquals.grid(row = 5, column = 3, pady = 1)
 
 #ROW 1
 buttnPi = Button(calc, text = "pi", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.pi)
 buttnPi.grid(row = 1, column = 4, pady = 1)
 buttnCos = Button(calc, text = "cos", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.cos)
 buttnCos.grid(row = 1, column = 5, pady = 1)
 buttnSin = Button(calc, text = "sin", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.sin)
 buttnSin.grid(row = 1, column = 6, pady = 1)
 buttnTan = Button(calc, text = "tan", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.tan)
 buttnTan.grid(row = 1, column = 7, pady = 1)
 
 #ROW 2
 buttn2Pi = Button(calc, text = "2pi", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.tau)
 buttn2Pi.grid(row = 2, column = 4, pady = 1)
 buttnCosh = Button(calc, text = "cosh", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.cosh)
 buttnCosh.grid(row = 2, column = 5, pady = 1)
 buttnSinh = Button(calc, text = "sinh", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.sinh)
 buttnSinh.grid(row = 2, column = 6, pady = 1)
 buttnTanh = Button(calc, text = "tanh", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.tanh)
 buttnTanh.grid(row = 2, column = 7, pady = 1)
 
 #ROW 3
 buttnLog = Button(calc, text = "log", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.log)
 buttnLog.grid(row = 3, column = 4, pady = 1)
 buttnExp = Button(calc, text = "exp", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.exp)
 buttnExp.grid(row = 3, column = 5, pady = 1)
 buttnMod = Button(calc, text = "Mod", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = lambda : added_value.operation("mod")
                                     )
 buttnMod.grid(row = 3, column = 6, pady = 1)
 buttnE = Button(calc, text = "e", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.e)
 buttnE.grid(row = 3, column = 7, pady = 1)
 
 #ROW 4
 buttnLog10 = Button(calc, text = "log10", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.log10)
 buttnLog10.grid(row = 4, column = 4, pady = 1)
 buttnLog1p = Button(calc, text = "log1p", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.log1p)
 buttnLog1p.grid(row = 4, column = 5, pady = 1)
 buttnExpm1 = Button(calc, text = "expm1", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.expm1)
 buttnExpm1.grid(row = 4, column = 6, pady = 1)
 buttnLgamma = Button(calc, text = "lgamma", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.lgamma)
 buttnLgamma.grid(row = 4, column = 7, pady = 1)
 
 #ROW 5
 buttnLog2 = Button(calc, text = "log2", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.log2)
 buttnLog2.grid(row = 5, column = 4, pady = 1)
 buttnDeg = Button(calc, text = "deg", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.degrees)
 buttnDeg.grid(row = 5, column = 5, pady = 1)
 buttnAcosh = Button(calc, text = "acosh", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.acosh)
 buttnAcosh.grid(row = 5, column = 6, pady = 1)
 buttnAsinh = Button(calc, text = "asinh", width = 6, height = 2,
-                                    bg = "black", fg = "white",
+                                    bg = "powder blue", fg = "black",
                                     font = ("Helvetica", 20, "bold"),
                                     bd = 4, command = added_value.asinh)
 buttnAsinh.grid(row = 5, column = 7, pady = 1)
 
 lblDisplay = Label(calc, text = "Scientific Calculator", 
-                                    font = ("Helvetica", 30, "bold"),
-                                    bg = "black", fg = "white", justify = CENTER)
+                                    font = ("Tahoma", 30, "bold"),
+                                    bg = "powder blue", fg = "black", justify = CENTER)
 lblDisplay.grid(row = 0, column = 4, columnspan = 4)
 
 #Creating the menubar of the calculator GUI
